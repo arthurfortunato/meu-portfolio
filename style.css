@@ -1,0 +1,136 @@
+/* Global ================== */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+
+/* Links ================== */
+.link {
+  background: rgb(1, 196, 202);
+  padding: 0.7rem 1.8rem;
+  border: 2px solid rgb(0, 197, 204);
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+
+  margin-left: 18rem;
+  transition: 0.4s;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+/* Scrollbar ================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Header ================== */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 80px;
+
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.avatar {
+  display: flex;
+  border-radius: 50px;
+}
+
+.avatar img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding-right: 1.2rem;
+
+  transition: 0.4s;
+}
+
+.nav a:hover {
+  color: rgb(61, 61, 61);
+}
+
+/* Find-me ================== */
+#find-me {
+  display: flex;
+  align-items: center;
+  background: url("./assets/perfil.svg") no-repeat center;
+  height: 100vh;
+  color: #fff;
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+/* About-me ================== */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer ================== */
+footer {
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: #202121;
+  color: #fff;
+}
+
+footer img {
+  height: 60px;
+}
