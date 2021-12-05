@@ -1,4 +1,11 @@
 $(document).ready(function(){
+    var typed = new Typed(".typing", {
+        strings: ["Desenvolvedor", "FullStack Jr"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+    
   $('.carousel').owlCarousel({
       margin: 20,
       loop: true,

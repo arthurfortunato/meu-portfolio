@@ -1,4 +1,4 @@
-/* Global ================== */
+/* Global ========================================================== */
 
 * {
   margin: 0;
@@ -20,18 +20,18 @@ body {
 section {
   padding: 100px 0;
 }
-/* Titles =============================== */
+/* Titles ========================================================= */
 h2 {
   text-align: center;
   font: 700 2.6rem "Nunito", sans-serif;
   margin-bottom: 3rem;
 }
 
-/* Links ========================================== */
+/* Links ============================================================ */
 .link {
-  background: rgb(1, 196, 202);
+  background: #7d2fa3;
   padding: 0.7rem 1.8rem;
-  border: 2px solid rgb(0, 197, 204);
+  border: 2px solid #7d2fa3;
   border-radius: 6px;
 
   text-decoration: none;
@@ -46,7 +46,7 @@ h2 {
   opacity: 0.7;
 }
 
-/* Scrollbar ================== */
+/* Scrollbar ======================================================= */
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -64,7 +64,7 @@ h2 {
   background: #555;
 }
 
-/* Header ================== */
+/* Header ========================================================== */
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -105,7 +105,7 @@ h2 {
   color: rgb(61, 61, 61);
 }
 
-/* Find-me ================== */
+/* Find-me =========================================================== */
 #find-me {
   display: flex;
   align-items: center;
@@ -121,7 +121,17 @@ h2 {
   margin-left: 25rem;
 }
 
-/* About-me ================== */
+.text {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.text span{
+  color: rgb(238, 71, 196);
+  font-weight: 500;
+}
+
+/* About-me ========================================================= */
 #about h2 {
   background: #fcfcfc;
 }
@@ -145,7 +155,7 @@ h2 {
   margin-top: 3rem;
 }
 
-/* Projects ================== */
+/* Projects =========================================================== */
 #projects {
   height: 33rem;
   margin: auto;
@@ -193,9 +203,8 @@ h2 {
 
 .box img {
   height: 10rem;
-  width: 10rem;
+  width: 8rem;
   border-radius: 0.25rem;
-  object-fit: cover;
   transition: all 0.3s ease;
 }
 
@@ -214,9 +223,9 @@ h2 {
   margin-top: 1rem;
 }
 
-/* Skills ================== */
+/* Skills =========================================================== */
 #skills {
- margin-top: 5rem;
+  margin-top: 5rem;
 }
 .icons {
   display: flex;
@@ -282,7 +291,51 @@ h2 {
   border-radius: 1rem;
 }
 
-/* Footer ================== */
+/* Contact ============================================================ */
+#contact {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+ margin-top: -10rem;
+}
+
+.contact-content {
+  width: 30rem;
+}
+
+.contact-content h3{
+  font: 600 1.2rem "Nunito", sans-serif;  
+  margin-bottom: 1rem;
+}
+
+.contact-content p{
+  font: normal 1.2rem "Nunito", sans-serif;  
+  margin-bottom: 1rem;
+}
+
+.icons i{
+  margin-right: 1.4rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0.7rem;
+}
+
+.row a {
+  text-decoration: none;
+  color: #000;
+}
+
+.row i {
+  color: #7d2fa3;
+}
+
+/* Footer ============================================================== */
 footer {
   height: 100px;
   width: 100%;
@@ -297,5 +350,14 @@ footer {
 }
 
 footer img {
-  height: 60px;
+  height: 40px;
+  margin-right: 2rem;
+}
+
+footer i {
+  color: #7d2fa3;
+}
+
+footer strong {
+  color: #7d2fa3;
 }
