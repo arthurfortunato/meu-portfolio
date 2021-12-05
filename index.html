@@ -9,71 +9,118 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,200&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;700&family=Poppins:wght@100;200;400;500;600;700&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
-  <header>
-    <div class="avatar">
-      <img src="./assets/avatar.jpeg" alt="Avatar">
-    </div>
+  <header class="navbar">
+    <div class="avatar"><a href="#">
+        <img src="assets/avatar.jpeg" alt="Avatar" width="55px">
+        <span></span></a></div>
     <div class="nav">
-      <a href="#">Home</a>
-      <a href="#">Sobre Mim</a>
-      <a href="#">Minhas Skills</a>
-      <a href="#">Meus Projetos</a>
-      <a href="#">Contate-me</a>
+      <a href="#find-me">Home</a>
+      <a href="#about">Sobre Mim</a>
+      <a href="#skills">Minhas Skills</a>
+      <a href="#projects">Meus Projetos</a>
+      <a href="#contact">Contate-me</a>
     </div>
   </header>
+
   <main class="container">
 
     <section id="find-me">
+      <div class="find-me-link">
         <a class="link" href="https://www.linkedin.com/in/arthur-forturnato-643828187/" target="_blank">
           Me encontre
         </a>
+      </div>
     </section>
 
-    <section id="about-me">
+    <section id="about">
       <h2>Sobre mim</h2>
-      <p>Texto sobre mim ..................................</p>
-      <a class="link" href="">Baixe meu Currículo</a>
+
+      <div class="about-content">
+        <div>
+          <img src="./assets/aboutme.jpeg" alt="">
+        </div>
+        <div class="box-right">
+          <p>
+            Sou carioca, natural da cidade do Rio de Janeiro/RJ.
+            Sou formado em Ciências Econômicas e Contabilidade.
+            Atualmente estudo programação para desenvolvimento FullStack.
+            Apaixonado por criar e compartilhar conteúdo de programação,
+            sou muito curioso e gosto de estudar e aprender sempre.
+            Se você quiser saber mais sobre minha historia profissional
+            basta fazer o download do meu curriculo abaixo.
+          </p>
+          <div class="curriculum">
+            <a class="link" href="#">Baixe meu Currículo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="title">Meus Projetos</h2>
+      <div class="carousel owl-carousel">
+        <div class="card">
+          <div class="box">
+            <a href="https://github.com/arthurfortunato" target="_blank"><img src="assets/github-white.png" alt=""></a>
+            <h1>Meu Github</h1>
+            <p>Todos os meus projetos você encontra aqui.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <a href="https://github.com/arthurfortunato/NLW-Together-ReactJs" target="_blank"><img
+                src="assets/letmeask.png" alt=""></a>
+            <h1>Letmeask</h1>
+            <p>Crie salas de Q&A em tempo real.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <a href="https://github.com/arthurfortunato/Tarefas" target="_blank"><img src="assets/tarefas.png"
+                alt=""></a>
+            <h1>Tarefas</h1>
+            <p>Um CRUD simples com tema dark e light, com tela de autenticação e modal para a criação de usuários.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="skills">
       <h2>Minhas Skills</h2>
     </section>
 
-    <section id="projects">
-      <h2>Meus Projetos</h2>
+    <section id="contact">
+      <h2>Contate-me</h2>
 
-
-    </section id="contact">
-    <h2>Contate-me</h2>
-
-    <div class="contact-content">
-      <div class="information">
-        <h3>Entre em contato</h3>
-        <p>texto sobre ...</p>
-        <div class="about">
-          <img src="" alt="">
-          <div>
-
+      <div class="contact-content">
+        <div class="information">
+          <h3>Entre em contato</h3>
+          <p>texto sobre ...</p>
+          <div class="about">
+            <img src="" alt="">
+            <div>
+            </div>
           </div>
         </div>
       </div>
-
-
-    </div>
-    <section>
-
     </section>
   </main>
+
   <footer>
     <div>
       <a href="https://github.com/arthurfortunato" target="_blank">
-        <img src="./assets/github.png" alt="Image Github">
+        <img src="./assets/github-white.png" alt="Image Github">
       </a>
       <a href="https://www.linkedin.com/in/arthur-forturnato-643828187/" target="_blank">
         <img src="./assets/linkedin.png" alt="Image Linkedin">
@@ -86,6 +133,8 @@
       Arthur Fortunato
     </p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

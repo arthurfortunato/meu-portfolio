@@ -9,7 +9,7 @@
 
 html {
   font-size: 93.75%;
-
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,8 +20,14 @@ body {
 section {
   padding: 100px 0;
 }
+/* Titles =============================== */
+h2 {
+  text-align: center;
+  font: 700 2.6rem "Nunito", sans-serif;
+  margin-bottom: 3rem;
+}
 
-/* Links ================== */
+/* Links ========================================== */
 .link {
   background: rgb(1, 196, 202);
   padding: 0.7rem 1.8rem;
@@ -33,7 +39,6 @@ section {
   font-size: 1.4rem;
   font-weight: normal;
 
-  margin-left: 18rem;
   transition: 0.4s;
 }
 
@@ -60,10 +65,12 @@ section {
 }
 
 /* Header ================== */
-header {
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 30px 0;
+  background: rgba(0, 0, 0, 0.5);
 
   height: 80px;
 
@@ -86,8 +93,10 @@ header {
 
 .nav a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   padding-right: 1.2rem;
+  color: #fff;
+  font-weight: 600;
 
   transition: 0.4s;
 }
@@ -106,15 +115,107 @@ header {
   min-height: 500px;
   background-size: cover;
   background-attachment: fixed;
+}
 
+.find-me-link {
+  margin-left: 25rem;
 }
 
 /* About-me ================== */
-#about-me {
+#about h2 {
+  background: #fcfcfc;
+}
+
+.about-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.about-content img {
+  height: 400px;
+}
+
+.box-right {
+  text-align: justify;
+  width: 40%;
+}
+
+.curriculum {
+  margin-top: 3rem;
+}
+
+/* Projects ================== */
+#projects {
+  height: 33rem;
+  margin: auto;
+  background: #111;
+  width: 100%;
+}
+
+#projects h2 {
+  color: #fff;
+}
+
+.carousel {
+  max-width: 90rem;
+  padding: 0 80px;
+  margin: auto;
+}
+
+.card {
+  height: 25rem;
+  width: 25rem;
+  border-radius: 0.25rem;
+  background: #222;
+  padding: 3rem;
+  text-align: center;
+
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: rgba(1, 2, 2, 0.6);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.card:hover .box {
+  transform: scale(1.05);
+}
+
+.box img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.box h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 2.4rem;
+}
+
+.box p {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #a2a2a2;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Skills ================== */
+#skills {
 }
 
 /* Footer ================== */
