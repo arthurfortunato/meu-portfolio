@@ -252,8 +252,8 @@ h2 {
 }
 
 .deploy p {
-  font: 400 1rem "Poppins", sans-serif;
-  color: #fff;
+  font: 400 1.4rem "Poppins", sans-serif;
+  color: #a2a2a2;
 }
 
 .deploy-link {
@@ -483,6 +483,10 @@ footer strong {
 
   .deploy {
     margin: 0;
+  }
+
+  .deploy p {
+    font-size: 1rem;
   }
 
   .deploy-link {
