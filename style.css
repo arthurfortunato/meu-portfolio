@@ -225,7 +225,7 @@ h2 {
 
 /* Skills =========================================================== */
 #skills {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .icons {
   display: flex;
@@ -243,7 +243,6 @@ h2 {
   width: 100%;
   text-align: center;
   background: #111;
-  margin-top: 2rem;
 }
 
 .deploy h3 {
@@ -258,8 +257,7 @@ h2 {
 }
 
 .deploy-link {
-  margin-top: 3rem;
-  padding: 3rem;
+  padding: 2rem;
   display: flex;
   align-items: center;
 }
@@ -363,10 +361,20 @@ footer strong {
   color: #7d2fa3;
 }
 
-
+/* Responsive Titles ========================================================= */
+@media (max-width: 360px) {
+  h2 {
+    transition: 1.82s all;
+    text-align: center;
+    font: 700 2.6rem "Nunito", sans-serif;
+    margin-bottom: 1.5rem;
+  }  
+}
 /* Responsive Header ================================================= */
 @media (max-width: 684px) {
+ 
   .nav a {
+    transition: 1.82s all;
     font-size: 0.8rem;
     padding-right: 0.4rem;
   }
@@ -386,30 +394,36 @@ footer strong {
 /* Responsive Find-me=================================================== */
 @media (max-width: 1080px) {
   .find-me-link {
-   margin-right: 30rem;
+    transition: 1.82s all;
+    margin-right: 30rem;
   }
 }
 @media (max-width: 772px) {
   .find-me-link {
-   margin-right: 15rem;
+    margin-right: 15rem;
+    margin-left: 1rem;
   }
 }
 
 @media (max-width: 558px) {
   .find-me-link {
-   margin-right: 5rem;
-   margin-top: 15rem;
+    margin-right: 5rem;
+    margin-top: 15rem;
   }
-}
 
-@media (max-width: 480px) {
-  #find-me {
-   
+  .text {
+    font-size: 1.4rem;
   }
 }
 
 /* Responsive About-me ================================================= */
 @media (max-width: 800px) {
+  #about {
+    transition: 1.82s all;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .about-content img {
     display: none;
   }
@@ -417,65 +431,65 @@ footer strong {
     width: 100%;
     padding: 2rem;
   }
+
+  
+  .curriculum {
+    margin-top: 3rem;
+  }
 }
 
 /* Responsive Projects =============================================== */
-@media (max-width: 1286px) {
-  
-  .card {
-    height: 25rem;
-    width: 23rem;
+@media (max-width: 899px) {
+  #projects {
+    transition: 1.82s all;
+    height: 31rem;
+    padding-top: 50px;
   }
-}
 
-@media (max-width: 1286px) {
-  
-  .card {
-    height: 25rem;
-    width: 24rem;
-  }
-}
-
-@media (max-width: 532px) {
-  
   .carousel {
-    padding: 1rem;
+    max-width: 35rem;
+    padding: 0 80px;
+    margin: auto;
   }
+}
 
+@media (max-width: 546px) {
   .card {
-    height: 23rem;
-    width: 21rem;
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 456px) {
+  .carousel {
+    padding: 0 40px;
   }
 
-  .box img {
-    height: 8rem;
-    width: 6rem;
-  }
-  
   .box p {
     font-size: 0.8rem;
   }
 }
 
-@media (max-width: 345px) {
-  
-  .card {
-    height: 23rem;
-    width: 19rem;
-  }
-
-}
-
 /* Responsive Skills ================================================= */
 @media (max-width: 864px) {
+  #skills {
+    transition: 1.82s all;
+    padding-top: 50px;
+  }
   .icons img {
     height: 2rem;
     margin: 1rem;
   }
 
+  .deploy {
+    margin: 0;
+  }
+
   .deploy-link {
     flex-direction: column;
+    margin: 0;
   }
+
 }
 
 @media (max-width: 580px) {
@@ -523,24 +537,25 @@ footer strong {
 /* Responsive Contact ================================================= */
 @media (max-width: 460px) {
   .contact-content {
+    transition: 1.82s all;
     width: 20rem;
   }
-  
+
   .contact-content h3 {
     font: 600 1.2rem "Nunito", sans-serif;
     margin-bottom: 1rem;
   }
-  
+
   .contact-content p {
     font: normal 1rem "Nunito", sans-serif;
     text-align: justify;
     margin-bottom: 1rem;
   }
-  
+
   .icons i {
     margin-right: 1rem;
   }
-  
+
   .row {
     margin: 0.4rem;
   }
@@ -550,12 +565,12 @@ footer strong {
   .contact-content {
     width: 15rem;
   }
-  
+
   .contact-content h3 {
     font: 600 1.2rem "Nunito", sans-serif;
     margin-bottom: 1rem;
   }
-  
+
   .sub-title {
     font-size: 0.8rem;
   }
