@@ -109,7 +109,9 @@ h2 {
 #find-me {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: url("./assets/perfil.svg") no-repeat center;
+  width: 100%;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -118,7 +120,8 @@ h2 {
 }
 
 .find-me-link {
-  margin-left: 25rem;
+  width: 20rem;
+  margin-right: 40rem;
 }
 
 .text {
@@ -126,15 +129,12 @@ h2 {
   margin: 10px 0;
 }
 
-.text span{
+.text span {
   color: rgb(238, 71, 196);
   font-weight: 500;
 }
 
 /* About-me ========================================================= */
-#about h2 {
-  background: #fcfcfc;
-}
 
 .about-content {
   display: flex;
@@ -189,16 +189,16 @@ h2 {
   background: rgba(1, 2, 2, 0.6);
 }
 
+.card:hover .box {
+  transform: scale(1.05);
+}
+
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: 0.4s;
-}
-
-.card:hover .box {
-  transform: scale(1.05);
 }
 
 .box img {
@@ -259,6 +259,7 @@ h2 {
 
 .deploy-link {
   margin-top: 3rem;
+  padding: 3rem;
   display: flex;
   align-items: center;
 }
@@ -293,29 +294,29 @@ h2 {
 
 /* Contact ============================================================ */
 #contact {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
- margin-top: -10rem;
+  margin-top: -10rem;
 }
 
 .contact-content {
   width: 30rem;
 }
 
-.contact-content h3{
-  font: 600 1.2rem "Nunito", sans-serif;  
+.contact-content h3 {
+  font: 600 1.2rem "Nunito", sans-serif;
   margin-bottom: 1rem;
 }
 
-.contact-content p{
-  font: normal 1.2rem "Nunito", sans-serif;  
+.contact-content p {
+  font: normal 1.2rem "Nunito", sans-serif;
   margin-bottom: 1rem;
 }
 
-.icons i{
+.icons i {
   margin-right: 1.4rem;
 }
 
@@ -360,4 +361,202 @@ footer i {
 
 footer strong {
   color: #7d2fa3;
+}
+
+
+/* Responsive Header ================================================= */
+@media (max-width: 684px) {
+  .nav a {
+    font-size: 0.8rem;
+    padding-right: 0.4rem;
+  }
+
+  .avatar img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media (max-width: 470px) {
+  .nav a {
+    font-size: 0.6rem;
+  }
+}
+
+/* Responsive Find-me=================================================== */
+@media (max-width: 1080px) {
+  .find-me-link {
+   margin-right: 30rem;
+  }
+}
+@media (max-width: 772px) {
+  .find-me-link {
+   margin-right: 15rem;
+  }
+}
+
+@media (max-width: 558px) {
+  .find-me-link {
+   margin-right: 5rem;
+   margin-top: 15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #find-me {
+   
+  }
+}
+
+/* Responsive About-me ================================================= */
+@media (max-width: 800px) {
+  .about-content img {
+    display: none;
+  }
+  .box-right {
+    width: 100%;
+    padding: 2rem;
+  }
+}
+
+/* Responsive Projects =============================================== */
+@media (max-width: 1286px) {
+  
+  .card {
+    height: 25rem;
+    width: 23rem;
+  }
+}
+
+@media (max-width: 1286px) {
+  
+  .card {
+    height: 25rem;
+    width: 24rem;
+  }
+}
+
+@media (max-width: 532px) {
+  
+  .carousel {
+    padding: 1rem;
+  }
+
+  .card {
+    height: 23rem;
+    width: 21rem;
+  }
+
+  .box img {
+    height: 8rem;
+    width: 6rem;
+  }
+  
+  .box p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 345px) {
+  
+  .card {
+    height: 23rem;
+    width: 19rem;
+  }
+
+}
+
+/* Responsive Skills ================================================= */
+@media (max-width: 864px) {
+  .icons img {
+    height: 2rem;
+    margin: 1rem;
+  }
+
+  .deploy-link {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 580px) {
+  .icons img {
+    height: 1.45rem;
+    margin: 0.8rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .icons img {
+    height: 1.2rem;
+    margin: 0.5rem;
+  }
+}
+@media (max-width: 340px) {
+  .icons img {
+    height: 0.8rem;
+    margin: 0.5rem;
+  }
+}
+
+@media (max-width: 996px) {
+  .left {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .right {
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 484px) {
+  .left p {
+    width: 15rem;
+    margin: 0;
+  }
+  .right p {
+    width: 15rem;
+    margin: 0;
+  }
+}
+
+/* Responsive Contact ================================================= */
+@media (max-width: 460px) {
+  .contact-content {
+    width: 20rem;
+  }
+  
+  .contact-content h3 {
+    font: 600 1.2rem "Nunito", sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-content p {
+    font: normal 1rem "Nunito", sans-serif;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+  
+  .icons i {
+    margin-right: 1rem;
+  }
+  
+  .row {
+    margin: 0.4rem;
+  }
+}
+
+@media (max-width: 310px) {
+  .contact-content {
+    width: 15rem;
+  }
+  
+  .contact-content h3 {
+    font: 600 1.2rem "Nunito", sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-title {
+    font-size: 0.8rem;
+  }
 }
