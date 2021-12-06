@@ -443,9 +443,9 @@ footer strong {
   .box-right {
     width: 100%;
     padding: 2rem;
-  }
+    font-size: 1rem;
+  }  
 
-  
   .curriculum {
     margin-top: 3rem;
   }
