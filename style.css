@@ -149,6 +149,7 @@ h2 {
 .box-right {
   text-align: justify;
   width: 40%;
+  font-size: 1.4rem;
 }
 
 .curriculum {
@@ -187,6 +188,11 @@ h2 {
 
 .card:hover {
   background: rgba(1, 2, 2, 0.6);
+  transform: scale(1.05);
+}
+
+.card:hover .box {
+  transform: scale(1.05);
 }
 
 .card:hover .box {
@@ -260,6 +266,12 @@ h2 {
   padding: 2rem;
   display: flex;
   align-items: center;
+
+  transition: 0.4s;
+}
+
+.deploy-link:hover {
+  transform: scale(1.05);
 }
 
 .left {
@@ -301,7 +313,7 @@ h2 {
 }
 
 .contact-content {
-  width: 30rem;
+  width: 40rem;
 }
 
 .contact-content h3 {
@@ -310,8 +322,9 @@ h2 {
 }
 
 .contact-content p {
-  font: normal 1.2rem "Nunito", sans-serif;
+  font: normal 1.4rem "Nunito", sans-serif;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .icons i {
@@ -539,7 +552,7 @@ footer strong {
 }
 
 /* Responsive Contact ================================================= */
-@media (max-width: 460px) {
+@media (max-width: 636px) {
   .contact-content {
     transition: 1.82s all;
     width: 20rem;
