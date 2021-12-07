@@ -345,23 +345,23 @@ h2 {
   text-align: justify;
 }
 
-.icons i {
+.contact-content__icons i {
   margin-right: 1.4rem;
 }
 
-.row {
+.contact-content__row {
   width: 100%;
   display: flex;
   align-items: center;
   margin: 0.7rem;
 }
 
-.row a {
+.contact-content__row a {
   text-decoration: none;
   color: #000;
 }
 
-.row i {
+.contact-content__row i {
   color: #7d2fa3;
 }
 
@@ -595,11 +595,11 @@ footer strong {
     margin-bottom: 1rem;
   }
 
-  .icons i {
+  .contact-content__icons i {
     margin-right: 1rem;
   }
 
-  .row {
+  .contact-content__row {
     margin: 0.4rem;
   }
 }
@@ -614,7 +614,7 @@ footer strong {
     margin-bottom: 1rem;
   }
 
-  .sub-title {
+  .info__sub-title {
     font-size: 0.8rem;
   }
 }
