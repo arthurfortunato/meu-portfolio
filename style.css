@@ -27,25 +27,6 @@ h2 {
   margin-bottom: 3rem;
 }
 
-/* Links ============================================================ */
-.link {
-  background: #7d2fa3;
-  padding: 0.7rem 1.8rem;
-  border: 2px solid #7d2fa3;
-  border-radius: 6px;
-
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: normal;
-
-  transition: 0.4s;
-}
-
-.link:hover {
-  opacity: 0.7;
-}
-
 /* Scrollbar ======================================================= */
 
 ::-webkit-scrollbar {
@@ -93,8 +74,8 @@ h2 {
 
 .nav a {
   text-decoration: none;
-  font-size: 1.1rem;
-  padding-right: 1.2rem;
+  font-size: 1rem;
+  padding-right: 1.6rem;
   color: #fff;
   font-weight: 600;
 
@@ -105,8 +86,8 @@ h2 {
   color: rgb(61, 61, 61);
 }
 
-/* Find-me =========================================================== */
-#find-me {
+/* Home =========================================================== */
+#home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,23 +101,40 @@ h2 {
   min-height: 500px;
 }
 
-.find-me-link {
-  width: 20rem;
+.link {
+  width: 25rem;
   margin-right: 40rem;
 }
 
-.text {
-  font-size: 2rem;
-  margin: 10px 0;
+.link a{
+  background: #7d2fa3;
+  padding: 0.9rem 3.8rem;
+  border: 2px solid #7d2fa3;
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: normal;
+
+  transition: 0.4s;
 }
 
-.text span {
+.link a:hover {
+  opacity: 0.7;
+}
+
+.link__text {
+  font-size: 2rem;
+  margin: 15px 0;
+}
+
+.link__text span {
   color: rgb(238, 71, 196);
   font-weight: 500;
 }
 
 /* About-me ========================================================= */
-
 .about-content {
   display: flex;
   justify-content: center;
@@ -145,6 +143,7 @@ h2 {
 
 .about-content img {
   height: 400px;
+  margin-right: 7rem;
 }
 
 .box-right {
@@ -156,6 +155,25 @@ h2 {
 .curriculum {
   margin-top: 3rem;
 }
+
+.curriculum a{
+  background: #7d2fa3;
+  padding: 0.9rem 2.8rem;
+  border: 2px solid #7d2fa3;
+  border-radius: 6px;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: normal;
+
+  transition: 0.4s;
+}
+
+.curriculum a:hover {
+  opacity: 0.7;
+}
+
 
 /* Projects =========================================================== */
 #projects {
@@ -215,7 +233,7 @@ h2 {
   transition: all 0.3s ease;
 }
 
-.box h1 {
+.box h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
@@ -405,15 +423,15 @@ footer strong {
   }
 }
 
-/* Responsive Find-me=================================================== */
+/* Responsive Home=================================================== */
 @media (max-width: 1080px) {
-  .find-me-link {
+  .link {
     transition: 1.82s all;
     margin-right: 10rem;
   }
 }
 @media (max-width: 772px) {
-  .find-me-link {
+  .link {
     margin-right: 0rem;
     margin-left: 5rem;
     margin-bottom: 12rem;
@@ -421,11 +439,11 @@ footer strong {
 }
 
 @media (max-width: 558px) {
-  .find-me-link {
+  .link {
     margin-left: 6rem;
   }
 
-  .text {
+  .link__text {
     font-size: 1.4rem;
   }
 }

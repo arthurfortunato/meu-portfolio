@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var typed = new Typed(".typing", {
-        strings: ["Desenvolvedor", "FullStack Jr"],
+    var typed = new Typed(".link__typing", {
+        strings: ["Arthur Fortunato", "Desenvolvedor", "FullStack Jr"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
