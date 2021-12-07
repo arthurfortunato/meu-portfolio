@@ -46,7 +46,7 @@ h2 {
 }
 
 /* Header ========================================================== */
-.navbar {
+.header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -60,19 +60,19 @@ h2 {
   z-index: 999;
 }
 
-.avatar {
+.logo {
   display: flex;
   border-radius: 50px;
 }
 
-.avatar img {
+.logo img {
   height: 60px;
   width: 60px;
   border-radius: 50%;
   border: 1px solid #fff;
 }
 
-.nav a {
+.navbar a {
   text-decoration: none;
   font-size: 1rem;
   padding-right: 1.6rem;
@@ -82,7 +82,7 @@ h2 {
   transition: 0.4s;
 }
 
-.nav a:hover {
+.navbar a:hover {
   color: rgb(61, 61, 61);
 }
 
@@ -106,7 +106,7 @@ h2 {
   margin-right: 40rem;
 }
 
-.link a{
+.link a {
   background: #7d2fa3;
   padding: 0.9rem 3.8rem;
   border: 2px solid #7d2fa3;
@@ -135,28 +135,28 @@ h2 {
 }
 
 /* About-me ========================================================= */
-.about-content {
+.text {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.about-content img {
-  height: 400px;
+.text img {
+  height: 300px;
   margin-right: 7rem;
 }
 
-.box-right {
+.text__content {
   text-align: justify;
   width: 40%;
   font-size: 1.4rem;
 }
 
-.curriculum {
+.download {
   margin-top: 3rem;
 }
 
-.curriculum a{
+.download a {
   background: #7d2fa3;
   padding: 0.9rem 2.8rem;
   border: 2px solid #7d2fa3;
@@ -164,16 +164,15 @@ h2 {
 
   text-decoration: none;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: normal;
 
   transition: 0.4s;
 }
 
-.curriculum a:hover {
+.download a:hover {
   opacity: 0.7;
 }
-
 
 /* Projects =========================================================== */
 #projects {
@@ -210,15 +209,15 @@ h2 {
   transform: scale(1.05);
 }
 
-.card:hover .box {
+.card:hover .card__box {
   transform: scale(1.05);
 }
 
-.card:hover .box {
+.card:hover .card__box {
   transform: scale(1.05);
 }
 
-.box {
+.card__box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -226,21 +225,21 @@ h2 {
   transition: 0.4s;
 }
 
-.box img {
+.card__box img {
   height: 10rem;
   width: 8rem;
   border-radius: 0.25rem;
   transition: all 0.3s ease;
 }
 
-.box h3 {
+.card__box h3 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
   margin-top: 2.4rem;
 }
 
-.box p {
+.card__box p {
   font-size: 1rem;
   font-weight: normal;
   color: #a2a2a2;
@@ -252,14 +251,14 @@ h2 {
 #skills {
   margin-top: 4rem;
 }
-.icons {
+.images {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.icons img {
+.images img {
   height: 3rem;
   margin: 1.5rem;
 }
@@ -400,25 +399,24 @@ footer strong {
     text-align: center;
     font: 700 2.6rem "Nunito", sans-serif;
     margin-bottom: 1.5rem;
-  }  
+  }
 }
 /* Responsive Header ================================================= */
 @media (max-width: 684px) {
- 
-  .nav a {
+  .navbar a {
     transition: 1.82s all;
     font-size: 0.8rem;
     padding-right: 0.4rem;
   }
 
-  .avatar img {
+  .logo img {
     height: 40px;
     width: 40px;
   }
 }
 
 @media (max-width: 470px) {
-  .nav a {
+  .navbar a {
     font-size: 0.6rem;
   }
 }
@@ -440,7 +438,7 @@ footer strong {
 
 @media (max-width: 558px) {
   .link {
-    margin-left: 6rem;
+    margin-left: 4rem;
   }
 
   .link__text {
@@ -456,10 +454,10 @@ footer strong {
     padding-bottom: 50px;
   }
 
-  .about-content img {
+  .text img {
     display: none;
   }
-  .box-right {
+  .text__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -467,10 +465,15 @@ footer strong {
     width: 100%;
     padding: 2rem;
     font-size: 1rem;
-  }  
+  }
 
-  .curriculum {
+  .download {
     margin-top: 3rem;
+  }
+
+  .download a {
+    padding: 0.9rem 2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -501,7 +504,7 @@ footer strong {
     padding: 0 40px;
   }
 
-  .box p {
+  .card__box p {
     font-size: 0.8rem;
   }
 }
@@ -512,7 +515,8 @@ footer strong {
     transition: 1.82s all;
     padding-top: 50px;
   }
-  .icons img {
+  .images img {
+    transition: 1.82s all;
     height: 2rem;
     margin: 1rem;
   }
@@ -529,24 +533,23 @@ footer strong {
     flex-direction: column;
     margin: 0;
   }
-
 }
 
 @media (max-width: 580px) {
-  .icons img {
+  .images img {
     height: 1.45rem;
     margin: 0.8rem;
   }
 }
 
 @media (max-width: 430px) {
-  .icons img {
+  .images img {
     height: 1.2rem;
     margin: 0.5rem;
   }
 }
 @media (max-width: 340px) {
-  .icons img {
+  .images img {
     height: 0.8rem;
     margin: 0.5rem;
   }
