@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var typed = new Typed(".link__typing", {
+    var typed = new Typed(".home-link__typing", {
         strings: ["Arthur Fortunato", "Desenvolvedor", "FullStack Jr"],
         typeSpeed: 100,
         backSpeed: 60,

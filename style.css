@@ -8,7 +8,6 @@
 }
 
 html {
-  font-size: 93.75%;
   scroll-behavior: smooth;
 }
 
@@ -17,11 +16,17 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section {
+html,
+body {
+  overflow-x: hidden;
+}
+
+.section {
   padding: 100px 0;
 }
+
 /* Titles ========================================================= */
-h2 {
+.title {
   text-align: center;
   font: 700 2.6rem "Nunito", sans-serif;
   margin-bottom: 3rem;
@@ -45,24 +50,20 @@ h2 {
   background: #555;
 }
 
+/* Main ========================================================== */
+/* .container {
+  max-width: ;
+} */
+
 /* Header ========================================================== */
 .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px 0;
+  padding: 10px 0;
   background: rgba(0, 0, 0, 0.5);
-
-  height: 80px;
-
-  position: fixed;
   width: 100%;
-  z-index: 999;
-}
-
-.logo {
-  display: flex;
-  border-radius: 50px;
+  position: fixed;
 }
 
 .logo img {
@@ -72,10 +73,19 @@ h2 {
   border: 1px solid #fff;
 }
 
+.navbar {
+  margin-right: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
 .navbar a {
   text-decoration: none;
   font-size: 1rem;
-  padding-right: 1.6rem;
+  padding-right: 24px;
   color: #fff;
   font-weight: 600;
 
@@ -87,13 +97,12 @@ h2 {
 }
 
 /* Home =========================================================== */
-#home {
+.section__home {
   display: flex;
   align-items: center;
   justify-content: center;
   background: url("./assets/perfil.svg") no-repeat center;
   background-size: cover;
-  background-attachment: fixed;
   background-position: left center;
   width: 100%;
   height: 100vh;
@@ -101,12 +110,22 @@ h2 {
   min-height: 500px;
 }
 
-.link {
+.home-link {
   width: 25rem;
   margin-right: 40rem;
 }
 
-.link a {
+.home-link__text {
+  font-size: 2rem;
+  padding: 15px 0;
+}
+
+.home-link__text span {
+  color: rgb(238, 71, 196);
+  font-weight: 500;
+}
+
+.home-link a {
   background: #7d2fa3;
   padding: 0.9rem 3.8rem;
   border: 2px solid #7d2fa3;
@@ -120,21 +139,14 @@ h2 {
   transition: 0.4s;
 }
 
-.link a:hover {
+.home-link a:hover {
   opacity: 0.7;
 }
 
-.link__text {
-  font-size: 2rem;
-  margin: 15px 0;
-}
-
-.link__text span {
-  color: rgb(238, 71, 196);
-  font-weight: 500;
-}
-
 /* About-me ========================================================= */
+.section__about {
+  padding-bottom: 100px;
+}
 .text {
   display: flex;
   justify-content: center;
@@ -143,7 +155,7 @@ h2 {
 
 .text img {
   height: 300px;
-  margin-right: 7rem;
+  padding-right: 50px;
 }
 
 .text__content {
@@ -152,14 +164,13 @@ h2 {
   font-size: 1.4rem;
 }
 
-.download {
-  margin-top: 3rem;
+.link-download {
+  padding-top: 50px;
 }
 
-.download a {
+.link-download a {
   background: #7d2fa3;
-  padding: 0.9rem 2.8rem;
-  border: 2px solid #7d2fa3;
+  padding: 16px 32px;
   border-radius: 6px;
 
   text-decoration: none;
@@ -170,19 +181,19 @@ h2 {
   transition: 0.4s;
 }
 
-.download a:hover {
+.link-download a:hover {
   opacity: 0.7;
 }
 
 /* Projects =========================================================== */
-#projects {
+.section__projects {
   height: 33rem;
   margin: auto;
   background: #111;
   width: 100%;
 }
 
-#projects h2 {
+.section__projects h2 {
   color: #fff;
 }
 
@@ -194,8 +205,8 @@ h2 {
 
 .card {
   height: 25rem;
-  width: 25rem;
-  border-radius: 0.25rem;
+  width: 24rem;
+  border-radius: 0.5rem;
   background: #222;
   padding: 3rem;
   text-align: center;
@@ -226,8 +237,7 @@ h2 {
 }
 
 .card__box img {
-  height: 10rem;
-  width: 8rem;
+  height: 130px;
   border-radius: 0.25rem;
   transition: all 0.3s ease;
 }
@@ -236,7 +246,7 @@ h2 {
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
-  margin-top: 2.4rem;
+  padding-top: 20px;
 }
 
 .card__box p {
@@ -244,43 +254,44 @@ h2 {
   font-weight: normal;
   color: #a2a2a2;
   text-align: center;
-  margin-top: 1rem;
+  padding-top: 16px;
 }
 
 /* Skills =========================================================== */
-#skills {
-  margin-top: 4rem;
+.section__skills {
+  padding-top: 160px;
 }
-.images {
+.skills-images {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 }
 
-.images img {
+.skills-images img {
   height: 3rem;
   margin: 1.5rem;
 }
 
-.deploy {
-  width: 100%;
+.hosted-projects {
   text-align: center;
   background: #111;
+  padding-bottom: 50px;
 }
 
-.deploy h3 {
+.hosted-projects h3 {
   font: 400 2rem "Poppins", sans-serif;
   color: #fff;
-  padding-top: 2rem;
+  padding-top: 50px;
 }
 
-.deploy p {
-  font: 400 1.4rem "Poppins", sans-serif;
+.hosted-projects p {
+  font: 400 1.1rem "Poppins", sans-serif;
   color: #a2a2a2;
 }
 
-.deploy-link {
+.hosted-projects-link {
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -288,46 +299,46 @@ h2 {
   transition: 0.4s;
 }
 
-.deploy-link:hover {
+.hosted-projects-link:hover {
   transform: scale(1.05);
 }
 
-.left {
+.hosted-projects-link--left {
   align-items: center;
   margin-left: 10rem;
 }
 
-.left p {
+.hosted-projects-link--left p {
   width: 30rem;
-  margin-left: 2rem;
+  padding-left: 2rem;
   color: #fff;
 }
 
-.right {
+.hosted-projects-link--right {
   justify-content: flex-end;
-  margin-right: 10rem;
+  padding-right: 10rem;
 }
 
-.right p {
+.hosted-projects-link--right p {
   width: 30rem;
-  margin-left: 2rem;
+  padding-left: 2rem;
   color: #fff;
 }
 
-.deploy img {
+.hosted-projects-link img {
   height: 10rem;
   width: 15rem;
   border-radius: 1rem;
 }
 
 /* Contact ============================================================ */
-#contact {
+.section__contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  margin-top: -10rem;
+  padding-top: 0px;
 }
 
 .contact-content {
@@ -366,7 +377,7 @@ h2 {
 }
 
 /* Footer ============================================================== */
-footer {
+.footer {
   height: 100px;
   width: 100%;
 
@@ -379,25 +390,25 @@ footer {
   color: #fff;
 }
 
-footer img {
+.footer img {
   height: 40px;
   margin-right: 2rem;
 }
 
-footer i {
+.footer i {
   color: #7d2fa3;
 }
 
-footer strong {
+.footer strong {
   color: #7d2fa3;
 }
 
 /* Responsive Titles ========================================================= */
 @media (max-width: 360px) {
-  h2 {
+  .title {
     transition: 1.82s all;
     text-align: center;
-    font: 700 2.6rem "Nunito", sans-serif;
+    font: 700 1.8rem "Nunito", sans-serif;
     margin-bottom: 1.5rem;
   }
 }
@@ -405,8 +416,8 @@ footer strong {
 @media (max-width: 684px) {
   .navbar a {
     transition: 1.82s all;
+    padding-right: 0.5rem;
     font-size: 0.8rem;
-    padding-right: 0.4rem;
   }
 
   .logo img {
@@ -417,38 +428,42 @@ footer strong {
 
 @media (max-width: 470px) {
   .navbar a {
-    font-size: 0.6rem;
+    font-size: 0.55rem;
   }
 }
 
 /* Responsive Home=================================================== */
 @media (max-width: 1080px) {
-  .link {
+  .home-link {
     transition: 1.82s all;
     margin-right: 10rem;
   }
 }
 @media (max-width: 772px) {
-  .link {
+  .home-link {
     margin-right: 0rem;
     margin-left: 5rem;
     margin-bottom: 12rem;
   }
-}
 
-@media (max-width: 558px) {
-  .link {
-    margin-left: 4rem;
+  .home-link a {
+    padding: 15px 40px;
   }
 
-  .link__text {
+  .home-link__text {
     font-size: 1.4rem;
   }
 }
 
+@media (max-width: 558px) {
+  .home-link {
+    margin-left: 4rem;
+  }
+}
+
 /* Responsive About-me ================================================= */
-@media (max-width: 800px) {
-  #about {
+@media (max-width: 860px) {
+  .section__about {
     transition: 1.82s all;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -463,39 +478,48 @@ footer strong {
     align-items: center;
 
     width: 100%;
-    padding: 2rem;
+    padding: 32px;
     font-size: 1rem;
   }
 
-  .download {
-    margin-top: 3rem;
+  .link-download {
+    margin-top: 1rem;
   }
 
-  .download a {
+  .link-download a {
     padding: 0.9rem 2rem;
     font-size: 1.4rem;
   }
 }
 
+@media (max-width: 490px) {
+  .text__content {
+    font-size: 0.9rem;
+  }
+
+  .link-download a {
+    padding: 14px 26px;
+    font-size: 1rem;
+  }
+}
+
 /* Responsive Projects =============================================== */
 @media (max-width: 899px) {
-  #projects {
+  .section__projects {
     transition: 1.82s all;
-    height: 31rem;
+    height: 29.5rem;
     padding-top: 50px;
   }
 
   .carousel {
     max-width: 35rem;
-    padding: 0 80px;
-    margin: auto;
   }
 }
 
 @media (max-width: 546px) {
   .card {
     width: 100%;
-    padding: 2rem;
+    padding: 3rem;
   }
 }
 
@@ -503,77 +527,77 @@ footer strong {
   .carousel {
     padding: 0 40px;
   }
-
-  .card__box p {
-    font-size: 0.8rem;
-  }
 }
 
 /* Responsive Skills ================================================= */
 @media (max-width: 864px) {
-  #skills {
-    transition: 1.82s all;
-    padding-top: 50px;
+  .section__skills {
+    padding-top: 120px;
   }
-  .images img {
+
+  .skills-images img {
     transition: 1.82s all;
     height: 2rem;
     margin: 1rem;
   }
 
-  .deploy {
+  .hosted-projects {
     margin: 0;
   }
 
-  .deploy p {
+  .hosted-projects p {
     font-size: 1rem;
   }
 
-  .deploy-link {
+  .hosted-projects-link {
     flex-direction: column;
     margin: 0;
   }
 }
 
-@media (max-width: 580px) {
-  .images img {
+@media (max-width: 630px) {
+  .skills-images img {
     height: 1.45rem;
     margin: 0.8rem;
   }
 }
 
-@media (max-width: 430px) {
-  .images img {
-    height: 1.2rem;
+@media (max-width: 470px) {
+  .skills-images img {
+    height: 1rem;
     margin: 0.5rem;
   }
 }
 @media (max-width: 340px) {
-  .images img {
+  .skills-images img {
     height: 0.8rem;
     margin: 0.5rem;
   }
 }
 
+.hosted-projects h3 {
+  font-size: 1.5rem;
+}
+
 @media (max-width: 996px) {
-  .left {
+  .hosted-projects-link--left {
     justify-content: center;
     margin-left: 0;
   }
-  .right {
+  .hosted-projects-link--right {
     justify-content: center;
-    margin-right: 0;
+    padding-right: 0;
   }
 }
 
 @media (max-width: 484px) {
-  .left p {
+  .hosted-projects-link--left p {
     width: 15rem;
-    margin: 0;
+    padding: 0;
   }
-  .right p {
+  .hosted-projects-link--right p {
     width: 15rem;
-    margin: 0;
+    padding: 0;
   }
 }
 

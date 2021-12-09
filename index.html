@@ -8,8 +8,7 @@
   <title>Arthur Fortunato</title>
   <meta name="description" content="Arthur Fortunato, formado em
    Ciências Econômicas e Contabilidade. Atualmente estuda programação para desenvolvimento FullStack. 
-   Principais Habilidades: HTML, CSS, JavaScript, NodeJS, ReactJS,
-   Express, Vue, Styled-Components">
+   Principais Habilidades: JavaScript, ReactJS, Node, Express, Styled-Components">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,30 +27,32 @@
 <body>
   <header class="header">
     <div class="logo"><a href="#">
-        <img src="assets/avatar.jpeg" alt="Avatar" width="55px">
+        <img src="assets/avatar.jpeg" alt="Avatar">
         <span></span></a></div>
-    <div class="navbar">
-      <a href="#find-me">Home</a>
-      <a href="#about">Sobre Mim</a>
-      <a href="#projects">Meus Projetos</a>
-      <a href="#skills">Minhas Skills</a>
-      <a href="#contact">Contate-me</a>
-    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#find-me">Home</a></li>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#projects">Meus Projetos</a></li>
+        <li><a href="#skills">Minhas Skills</a></li>
+        <li><a href="#contact">Contate-me</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
 
-    <section id="home">
-      <div class="link">
-        <div class="link__text"><span class="link__typing"></span></div>
+    <section id="home" class="section section__home">
+      <div class="home-link">
+        <div class="home-link__text"><span data-js="link-typing-js" class="home-link__typing"></span></div>
         <a href="https://www.linkedin.com/in/arthur-forturnato-643828187/" target="_blank">
           Me encontre
         </a>
       </div>
     </section>
 
-    <section id="about">
-      <h2>Sobre mim</h2>
+    <section id="about" class="section section__about">
+      <h2 class="title">Sobre mim</h2>
 
       <div class="text">
         <div>
@@ -66,16 +67,16 @@
             Se quiser saber mais sobre minha historia profissional
             basta fazer o download do meu curriculo abaixo.
           </p>
-          <div class="download">
+          <div class="link-download">
             <a href="./Profile.pdf" target="_blank">Baixe meu Currículo</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <h2>Meus Projetos</h2>
-      <div class="carousel owl-carousel">
+    <section id="projects" class="section section__projects">
+      <h2 class="title">Meus Projetos</h2>
+      <div data-carousel="carousel" class="carousel owl-carousel">
         <div class="card">
           <div class="card__box">
             <a href="https://github.com/arthurfortunato" target="_blank"><img src="assets/github-white.png" alt=""></a>
@@ -127,9 +128,9 @@
       </div>
     </section>
 
-    <section id="skills">
-      <h2>Minhas Skills</h2>
-      <div class="images">
+    <section id="skills" class="section section__skills">
+      <h2 class="title">Minhas Skills</h2>
+      <div class="skills-images">
         <div>
           <img src="./assets/skills/typescript.svg" alt="Image typescript">
           <img src="./assets/skills/js.svg" alt="Image javascript">
@@ -148,20 +149,20 @@
           <img src="./assets/skills/github.svg" alt="Image github">
         </div>
       </div>
-      <div class="deploy">
+      <div class="hosted-projects">
         <h3>Projetos hospedados</h3>
         <p>Clique e veja o site!</p>
-        <div class="deploy-link left">
+        <div class="hosted-projects-link hosted-projects-link--left">
           <a href="https://letmeask-70cac.web.app/" target="_blank"><img src="./assets/letmeask.png"
               alt="Image Letmeask"></a>
           <p>Projeto com o objetivo de criar salas de Q&A em tempo real.</p>
         </div>
-        <div class="deploy-link right">
+        <div class="hosted-projects-link hosted-projects-link--right">
           <a href="https://myfinancesapp.netlify.app/" target="_blank"><img src="./assets/finances.png"
               alt="Image Finances"></a>
           <p>Finances é uma plataforma para promover gestão financeira.</p>
         </div>
-        <div class="deploy-link left">
+        <div class="hosted-projects-link hosted-projects-link--left">
           <a href="https://desafiolandingpagearthurfortunato.netlify.app/" target="_blank"><img
               src="./assets/website.svg" alt="Image Website"></a>
           <p>Projeto com o objetivo de replicar o layout da landing page, deixando responsivo para Web e Mobile.</p>
@@ -169,8 +170,8 @@
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contate-me</h2>
+    <section id="contact" class="section section__contact">
+      <h2 class="title">Contate-me</h2>
 
       <div class="contact-content">
         <h3>Entre em contato comigo</h3>
@@ -209,7 +210,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div>
       <a href="https://github.com/arthurfortunato" target="_blank">
         <img src="./assets/github-white.png" alt="Image Github">
