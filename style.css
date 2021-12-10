@@ -535,10 +535,6 @@ body {
     margin: 1rem;
   }
 
-  .hosted-projects {
-    margin: 0;
-  }
-
   .hosted-projects p {
     font-size: 1rem;
   }
@@ -580,7 +576,7 @@ body {
   }
   .hosted-projects-link--right {
     justify-content: center;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
